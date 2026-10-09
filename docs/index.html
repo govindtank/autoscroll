@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScroll — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text-primary: #c9d1d9;
+            --text-heading: #58a6ff;
+            --accent: #238636;
+            --highlight: #79c0ff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: var(--text-heading);
+            margin-top: 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: var(--highlight);
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+        .meta-box {
+            background: rgba(88, 166, 255, 0.1);
+            border-left: 4px solid var(--text-heading);
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+        .badge {
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--highlight);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+            font-size: 0.9em;
+            color: #8b949e;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AutoScroll: Smart Hands-Free</h1>
+        <div class="meta-box">
+            <strong>Privacy Policy</strong><br>
+            <strong>Effective Date:</strong> October 8, 2026<br>
+            <strong>Developer:</strong> Govind Tank (<a href="https://github.com/govindtank">@govindtank</a>)<br>
+            <strong>Contact:</strong> govindtank600@gmail.com
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>AutoScroll ("the App", package: <code>com.droidtank.autoscroll</code>) is an Android utility designed to provide hands-free automated scrolling and customized gesture touch macros. We respect your privacy and are committed to protecting any information associated with your device.</p>
+
+        <h2>2. Android Accessibility Service API Usage & Disclosure</h2>
+        <p>AutoScroll utilizes Android's <code>AccessibilityService</code> API strictly and exclusively to perform the following core functions requested by the user:</p>
+        <ul>
+            <li><strong>Automated Gesture Dispatching:</strong> To mechanically dispatch simulated scroll gestures (swipe up, swipe down, swipe left, swipe right) on your screen at the velocity and easing curves configured by you.</li>
+            <li><strong>Foreground Package Detection:</strong> To detect when a designated user-configured application (e.g. Chrome, eBook readers, social media apps) is opened in order to automatically trigger per-app scrolling speed profiles and display the quick-control widget.</li>
+        </ul>
+
+        <div class="meta-box" style="border-left-color: #238636; background: rgba(35, 134, 54, 0.1);">
+            <strong>🔒 Strict Privacy & Accessibility Guarantee:</strong>
+            <ul>
+                <li>The Accessibility Service <strong>NEVER</strong> reads, intercepts, monitors, or collects screen content, typed text, passwords, credit card numbers, or messages.</li>
+                <li>The service operates entirely locally as a blind mechanical gesture dispatcher.</li>
+                <li>No screen data or audio data is ever captured, stored, or transmitted.</li>
+            </ul>
+        </div>
+
+        <h2>3. Data Collection, Storage, and Sharing</h2>
+        <ul>
+            <li><strong>Zero Data Collection:</strong> We do not collect, harvest, store, or transmit any Personally Identifiable Information (PII) or device identifiers.</li>
+            <li><strong>100% Offline & Local-First:</strong> All your custom scroll profiles, speed preferences, and gesture recordings are stored solely on your local device storage.</li>
+            <li><strong>No Third-Party SDKs / No Tracking:</strong> AutoScroll contains no advertising SDKs, no behavioral tracking frameworks, and no telemetry analytics libraries.</li>
+            <li><strong>Zero Data Sharing:</strong> Because no data is collected, no data is ever sold, rented, or shared with third parties.</li>
+        </ul>
+
+        <h2>4. Required Android Permissions</h2>
+        <ul>
+            <li><code>BIND_ACCESSIBILITY_SERVICE</code>: Required to dispatch mechanical scroll gestures on behalf of the user.</li>
+            <li><code>SYSTEM_ALERT_WINDOW</code>: Required to display the floating translucent overlay controls over designated apps.</li>
+            <li><code>RECEIVE_BOOT_COMPLETED</code>: (Optional) To restore automated per-app profile detection when your device reboots.</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>AutoScroll is a general utility tool and does not knowingly collect any data from children under the age of 13. Since no personal data is collected or transmitted from any user, our application complies fully with COPPA and Google Play Families policy requirements.</p>
+
+        <h2>6. Changes to this Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted directly to this public repository page with an updated Effective Date.</p>
+
+        <h2>7. Contact & Support</h2>
+        <p>If you have any questions, inquiries, or concerns regarding this Privacy Policy, please contact:</p>
+        <p><strong>Developer:</strong> Govind Tank<br>
+        <strong>Email:</strong> <a href="mailto:govindtank600@gmail.com">govindtank600@gmail.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/govindtank">https://github.com/govindtank</a></p>
+
+        <div class="footer">
+            © 2026 Govind Tank. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
