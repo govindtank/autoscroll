@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">AutoScroll Pro</string>
+    <string name="app_title">AutoScroll Pro</string>
+
+    <!-- Status -->
+    <string name="status_idle">Ready</string>
+    <string name="status_scrolling">Scrolling</string>
+    <string name="status_paused">Paused</string>
+
+    <!-- Notifications -->
+    <string name="notification_count">Scrolls: %d</string>
+    <string name="enable_notifications">Notifications</string>
+
+    <!-- Accessibility Service -->
+    <string name="accessibility_service_name">AutoScroll Pro</string>
+    <string name="accessibility_service_description">AutoScroll Pro uses the AccessibilityService API to perform automated hands-free touch gestures (swipes and scrolls) on your screen and detect configured foreground apps to display controls. It does NOT read, collect, store, or transmit any typed text, passwords, messages, keystrokes, personal data, or screen content.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Apps</string>
+    <string name="nav_gestures">Gestures</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="status_accessibility_required">Accessibility Required</string>
+    <string name="enable_accessibility">Enable Accessibility Service</string>
+    <string name="scroll_speed">Scroll Speed</string>
+    <string name="swipes_per_minute">%d/min</string>
+
+    <!-- App Selection -->
+    <string name="app_selection_title">App Selection</string>
+    <string name="app_selection_subtitle">Choose which apps to auto-scroll in</string>
+    <string name="search_apps">Search apps...</string>
+    <string name="no_apps_found">No apps found</string>
+    <string name="configured_apps">Configured Apps</string>
+    <string name="apps_enabled">%d apps enabled</string>
+    <string name="manage">Manage</string>
+
+    <!-- Gesture Recording -->
+    <string name="gesture_cloning">Gesture Cloning</string>
+    <string name="gesture_subtitle">Record custom gestures and replay them on any app</string>
+    <string name="record_gesture">Record New Gesture</string>
+    <string name="gesture_name">Gesture Name</string>
+    <string name="gesture_name_hint">e.g., Fast swipe down</string>
+    <string name="no_gestures">No saved gestures yet</string>
+    <string name="recording">Recording&#8230;</string>
+    <string name="gesture_saved">Gesture Saved!</string>
+    <string name="delete_gesture">Delete Gesture?</string>
+    <string name="delete_gesture_warning">This action cannot be undone.</string>
+
+    <!-- Settings -->
+    <string name="global_defaults">Global Defaults</string>
+    <string name="default_direction">Default Direction</string>
+    <string name="behavior">Behavior</string>
+    <string name="auto_start_boot">Auto-start on Boot</string>
+    <string name="auto_start_boot_desc">Resume scrolling after device restart</string>
+
+    <!-- About -->
+    <string name="about">About</string>
+    <string name="app_description">AutoScroll Pro is a universal gesture automation tool. It uses Android\'s Accessibility Service to perform automatic scrolling and replay custom touch gestures in any app.</string>
+    <string name="created_by">Created by Govind Tank</string>
+    <string name="version">Version 1.0.0</string>
+
+    <!-- Direction Labels -->
+    <string name="direction_up">Swipe Up</string>
+    <string name="direction_down">Swipe Down</string>
+    <string name="direction_alternating">Alternating</string>
+    <string name="direction_smart">Smart</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_accessibility_required">Accessibility Service must be enabled</string>
+    <string name="toast_permission_denied">Permission denied. Please grant in app settings.</string>
+    <string name="toast_gesture_started">Recording started&#8230; Perform your touch gesture!</string>
+    <string name="toast_gesture_finished">Recording finished!</string>
+</resources>

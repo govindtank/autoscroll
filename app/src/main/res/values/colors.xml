@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AutoScroll Pro Theme Colors -->
+<resources>
+
+    <!-- Primary -->
+    <color name="primary">#6750A4</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#EADDFF</color>
+    <color name="onPrimaryContainer">#21005D</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#625B71</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#E8DEF8</color>
+    <color name="onSecondaryContainer">#1D192B</color>
+
+    <!-- Background -->
+    <color name="background">#FFFBFE</color>
+    <color name="onBackground">#1C1B1F</color>
+
+    <!-- Surface -->
+    <color name="surface">#FFFBFE</color>
+    <color name="onSurface">#1C1B1F</color>
+    <color name="surfaceVariant">#E7E0EC</color>
+    <color name="onSurfaceVariant">#49454F</color>
+
+    <!-- Error -->
+    <color name="error">#B3261E</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="errorContainer">#F9DEDC</color>
+    <color name="onErrorContainer">#410E0B</color>
+
+    <!-- Outline -->
+    <color name="outline">#79747E</color>
+
+    <!-- Status Colors -->
+    <color name="statusGreen">#4CAF50</color>
+    <color name="statusYellow">#FFC107</color>
+    <color name="statusRed">#E53935</color>
+
+    <!-- Neutral -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#1C1B1F</color>
+
+    <!-- Launcher Icon Background -->
+    <color name="ic_launcher_background">#0E0C15</color>
+
+</resources>

@@ -1,0 +1,32 @@
+# AutoScroll - Android App .gitignore
+
+# Gradle
+.gradle/
+build/
+*/build/
+local.properties
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Kotlin
+*.class
+
+# Misc
+keystore.properties
+keystore/
+*.log
+*.tmp
+/captures
+.externalNativeBuild/
+.cxx/
+*.hprof
