@@ -3,7 +3,9 @@ package com.droidtank.autoscroll.ui.screens
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -38,6 +40,7 @@ fun SettingsScreen(
     onRequestEnableAccessibility: () -> Unit = {}
 ) {
     val context = LocalContext.current
+    val themeMode by scrollController.themeMode.collectAsState()
     var autoStart by remember { mutableStateOf(scrollController.autoStart) }
     var enableNotifs by remember { mutableStateOf(scrollController.enableNotifications) }
     var globalDirection by remember { mutableStateOf(scrollController.globalDirection) }
@@ -193,6 +196,75 @@ fun SettingsScreen(
                         )
                         Spacer(Modifier.width(6.dp))
                         Text("Enable Service", style = MaterialTheme.typography.labelMedium)
+                    }
+                }
+            }
+        }
+
+        // ── Appearance Section ──
+        GlassCard {
+            Text(
+                text = "Appearance",
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold
+            )
+
+            HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.2f))
+
+            Text(
+                text = "Choose your theme preference",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                listOf(
+                    Triple("SYSTEM", "System", Icons.Outlined.BrightnessAuto),
+                    Triple("LIGHT", "Light", Icons.Outlined.LightMode),
+                    Triple("DARK", "Dark", Icons.Outlined.DarkMode)
+                ).forEach { (mode, label, icon) ->
+                    val isSelected = themeMode == mode
+                    Surface(
+                        modifier = Modifier
+                            .weight(1f)
+                            .clip(RoundedCornerShape(12.dp))
+                            .clickable { scrollController.setThemeMode(mode) },
+                        shape = RoundedCornerShape(12.dp),
+                        color = if (isSelected)
+                            MaterialTheme.colorScheme.primaryContainer
+                        else
+                            MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                        border = if (isSelected)
+                            BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary)
+                        else null
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(vertical = 12.dp, horizontal = 4.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(4.dp)
+                        ) {
+                            Icon(
+                                imageVector = icon,
+                                contentDescription = label,
+                                tint = if (isSelected)
+                                    MaterialTheme.colorScheme.primary
+                                else
+                                    MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.size(20.dp)
+                            )
+                            Text(
+                                text = label,
+                                style = MaterialTheme.typography.labelMedium,
+                                fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                color = if (isSelected)
+                                    MaterialTheme.colorScheme.primary
+                                else
+                                    MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
                     }
                 }
             }

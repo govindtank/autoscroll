@@ -107,6 +107,18 @@ class ScrollController private constructor(private val context: Context) {
         get() = prefs.getString("global_direction", "UP") ?: "UP"
         set(value) = prefs.edit().putString("global_direction", value).apply()
 
+    var appTheme: String
+        get() = prefs.getString("app_theme", "SYSTEM") ?: "SYSTEM"
+        set(value) = prefs.edit().putString("app_theme", value).apply()
+
+    private val _themeMode = MutableStateFlow(prefs.getString("app_theme", "SYSTEM") ?: "SYSTEM")
+    val themeMode: StateFlow<String> = _themeMode.asStateFlow()
+
+    fun setThemeMode(mode: String) {
+        appTheme = mode
+        _themeMode.value = mode
+    }
+
     // ── Initialization ──
 
     init {

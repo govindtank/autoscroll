@@ -58,7 +58,15 @@ class AutoScrollActivity : ComponentActivity() {
         AccessibilityHelper.updateServiceState(this)
 
         setContent {
-            AutoScrollTheme {
+            val themeMode by scrollController.themeMode.collectAsState()
+            val isSystemDark = androidx.compose.foundation.isSystemInDarkTheme()
+            val isDarkTheme = when (themeMode) {
+                "LIGHT" -> false
+                "DARK" -> true
+                else -> isSystemDark
+            }
+
+            AutoScrollTheme(darkTheme = isDarkTheme) {
                 AutoScrollApp(scrollController = scrollController)
             }
         }

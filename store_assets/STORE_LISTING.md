@@ -44,11 +44,17 @@ When filling out the **Policy -> App content -> Accessibility Services** declara
 
 ---
 
-## 🎨 Visual Assets Requirements
-1. **App Icon**: 512 x 512 px PNG (32-bit color).
-2. **Feature Graphic**: 1024 x 500 px PNG/JPG banner.
-3. **Phone Screenshots (Min 4)**:
-   - Floating Controller in action over reader apps
-   - Per-App Trigger Configuration screen
-   - Custom Gesture Macro Recorder
-   - Smooth Speed Slider & Sensitivity Controls
+## 🎨 Verified Visual Assets Inventory
+All visual assets are 100% genuine captures directly from physical testing devices (no synthetic or mock images):
+
+1. **App Icon**: `store_assets/icon_512.png` (512 x 512 px PNG)
+2. **Feature Graphic**: `store_assets/feature_graphic_1024x500.png` (1024 x 500 px PNG)
+3. **Real Device Screenshots (1080 x 2340 px)**:
+   - `screenshot_1_home.png`: Home dashboard & scroll engine controls
+   - `screenshot_2_disclosure.png`: In-app prominent disclosure dialog with two-button explicit consent
+   - `screenshot_3_apps.png`: Per-app automation configuration & installed apps list
+   - `screenshot_4_gestures.png`: Gesture cloning & custom swipe macro recorder
+   - `screenshot_5_settings.png`: Settings with real-time accessibility status & Light/Dark appearance selector
+
+4. **Compliance Demonstration Video**:
+   - `store_assets/accessibility_demo.mp4` (and `store_assets/demo.mp4`): 55-second 1080x2340 60fps real device demonstration video showing clean install, in-flow disclosure modal with two action buttons, system settings delegation, service activation, returning to engine ready, feature walkthrough, and Light/Dark mode switching.
