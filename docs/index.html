@@ -100,8 +100,22 @@
         <p>AutoScroll utilizes Android's <code>AccessibilityService</code> API strictly and exclusively to perform the following core functions requested by the user:</p>
         <ul>
             <li><strong>Automated Gesture Dispatching:</strong> To mechanically dispatch simulated scroll gestures (swipe up, swipe down, swipe left, swipe right) on your screen at the velocity and easing curves configured by you.</li>
+            <li><strong>Custom Gesture Playback:</strong> To replay user-recorded touch sequences and macro gestures on the screen across any application.</li>
             <li><strong>Foreground Package Detection:</strong> To detect when a designated user-configured application (e.g. Chrome, eBook readers, social media apps) is opened in order to automatically trigger per-app scrolling speed profiles and display the quick-control widget.</li>
+            <li><strong>Hardware Volume Button Controls:</strong> To intercept physical volume button presses while scrolling to conveniently pause or resume scrolling hands-free.</li>
         </ul>
+
+        <p><strong>Prominent Disclosure & Explicit Consent:</strong> The app displays a clear prominent disclosure dialog within the app explaining these features and strict privacy safeguards before directing the user to system settings. User consent requires explicit affirmative action via two clearly distinct options ("Accept & Continue" and "Decline"). Navigating away or dismissing the dialog is never treated as consent.</p>
+
+        <div style="margin: 20px 0; text-align: center;">
+            <video controls width="100%" style="max-width: 440px; border-radius: 12px; border: 1px solid var(--border);" preload="metadata">
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <p style="margin-top: 8px;">
+                <a href="demo.mp4" target="_blank" style="color: var(--highlight); font-weight: 600;">Direct Link to Compliance Demonstration Video (MP4)</a>
+            </p>
+        </div>
 
         <div class="meta-box" style="border-left-color: #238636; background: rgba(35, 134, 54, 0.1);">
             <strong>🔒 Strict Privacy & Accessibility Guarantee:</strong>

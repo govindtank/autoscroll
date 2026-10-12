@@ -7,14 +7,19 @@
 ## 1. Overview
 AutoScroll ("the App") is an Android utility designed to provide automated screen scrolling and gesture macros. We respect your privacy and are committed to protecting your personal data.
 
-## 2. Accessibility Service Usage
+## 2. Accessibility Service Usage & Prominent Disclosure
 AutoScroll utilizes Android's `AccessibilityService` API strictly to deliver its core functionality:
 - **Gesture Dispatching**: To perform automated touch swipes, page turns, and scroll actions on your screen according to your customized speed settings.
+- **Custom Gesture Playback**: To replay user-recorded touch sequences and macro gestures on the screen.
 - **Foreground App Detection**: To detect which application is currently active in the foreground in order to automatically apply your configured per-app scrolling profiles.
+- **Hardware Volume Key Controls**: To intercept volume button presses while scrolling to conveniently pause or resume scrolling hands-free.
+
+### Prominent In-App Disclosure & Consent:
+Before requesting the `BIND_ACCESSIBILITY_SERVICE` permission or directing users to Android System Settings, the App presents a clear, unambiguous prominent disclosure modal detailing all features and privacy protections. User consent requires affirmative action via explicit "Accept & Continue" or "Decline" options. Navigating away or dismissing the dialog is never interpreted as consent.
 
 ### Strict Privacy Guarantee:
-- The Accessibility Service **does NOT** read, intercept, monitor, or record your screen content, typed text, credentials, messages, or personal data.
-- The service acts strictly as an automated touch dispatcher.
+- The Accessibility Service **does NOT** read, intercept, monitor, or record your screen content, typed text, credentials, messages, keystrokes, or personal data.
+- The service acts strictly as a local touch dispatcher and runs 100% offline. Zero data is transmitted to external servers.
 
 ## 3. Data Collection & Sharing
 - **No Personal Data Collected**: The App does not collect, store, transmit, or sell any personally identifiable information (PII).
